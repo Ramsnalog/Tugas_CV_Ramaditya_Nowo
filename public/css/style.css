@@ -1,0 +1,165 @@
+/* public/css/style.css - Desain Modern */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e2e8f0; /* Light Gray Background */
+    color: #333;
+    line-height: 1.6;
+}
+
+.cv-container {
+    max-width: 950px;
+    margin: 40px auto;
+}
+
+.cv-card {
+    background-color: white;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); /* Stronger Shadow */
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+}
+
+/* ------------------------------------- */
+/* A. Sidebar (Kolom Kiri) */
+/* ------------------------------------- */
+.cv-sidebar {
+    width: 35%; 
+    background-color: #f7f7f7; /* Slightly darker background for emphasis */
+    padding: 30px;
+    box-sizing: border-box;
+    border-right: 1px solid #eee;
+}
+
+/* Contact Box Styling */
+.cv-contact-box {
+    margin-bottom: 30px;
+}
+
+/* Contact Item Component Styling (Label dan Value) */
+.cv-contact-item > span:first-child {
+    font-weight: 600;
+    color: #4f46e5; /* Indigo Color */
+    display: block;
+    margin-top: 5px;
+    font-size: 0.95em;
+}
+.cv-contact-item > span:last-child {
+    display: block;
+    color: #555;
+    font-size: 0.9em;
+}
+
+/* Section Title for Sidebar */
+.cv-section-title-sidebar {
+    font-size: 1.1em;
+    font-weight: 700;
+    color: #1f2937; /* Darker text */
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #6366ff;
+    text-transform: uppercase;
+}
+
+/* List Styling (Skills) */
+.cv-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+.cv-list li {
+    margin-bottom: 5px;
+    padding-left: 1.5em;
+    text-indent: -1.5em;
+}
+.cv-list li::before {
+    content: "•";
+    color: #4f46e5; /* Bullet color */
+    font-weight: bold;
+    display: inline-block;
+    width: 1.5em;
+}
+
+/* ------------------------------------- */
+/* B. Main Content (Kolom Kanan) */
+/* ------------------------------------- */
+.cv-main-content {
+    width: 65%;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+/* Header/Profile Block */
+.cv-header-block {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.cv-header-block img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #ddd;
+}
+.cv-header-block h1 {
+    font-size: 2.5em; /* Bigger Name */
+    font-weight: 900;
+    color: #111827;
+    margin: 0;
+}
+.cv-header-block p {
+    font-size: 1.1em;
+    color: #4f46e5; /* Indigo Color */
+    margin: 0;
+    font-weight: 500;
+}
+
+/* Section Title for Main Content */
+.cv-section-title-main {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #ddd;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Experience/Education Item */
+.cv-item {
+    margin-bottom: 20px;
+    border-left: 4px solid #c7d2fe; /* Light Indigo Bar */
+    padding-left: 15px;
+}
+.cv-item h3 {
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #1f2937;
+    margin: 0 0 2px 0;
+}
+.cv-item p {
+    font-size: 0.9em;
+    color: #4f46e5; /* Highlight time/company */
+    margin: 0;
+}
+.cv-item span {
+    display: block;
+    color: #6b7280; /* Detail text */
+    margin-top: 5px;
+    text-align: justify;
+}
+
+
+/* Footer */
+.cv-footer {
+    text-align: center;
+    padding: 15px;
+    font-size: 0.85em;
+    color: #6b7280;
+    background-color: #f3f4f6;
+    border-top: 1px solid #eee;
+}
