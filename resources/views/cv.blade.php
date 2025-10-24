@@ -30,6 +30,10 @@
                 'Sistem Manajemen Basis Data: MySQL', 
                 'Software Editing: Adobe Lightroom'
             ],
+            'bahasa' => [
+                'Indonesia ',
+                'Inggris (Menengah)'
+            ],
         ];
     @endphp
 
@@ -50,6 +54,19 @@
                     @endforeach
                 </ul>
             </div>
+            'bahasa' => [
+                'Indonesia (Native)',
+                'Inggris (Dasar/Pasif)'
+            ],
+            <div style="margin-top: 24px;">
+                    <h2 class="cv-section-title-sidebar">Bahasa yang Dikuasai</h2> 
+                    <ul class="cv-list">
+                        @foreach ($data['bahasa'] as $bhs)
+                            <li>{{ $bhs }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+
         </aside>
 
         <div class="cv-main-content">
@@ -95,6 +112,6 @@
         
     </div>
         <footer class="cv-footer">
-            &copy; 2025 {{ $data['nama'] }} | Dibuat dengan Laravel Blade & CSS Native.
+            &copy; 2025 {{ $data['nama'] }} 
         </footer>
 @endsection
